@@ -1,0 +1,74 @@
+svg * {
+  transform-box: fill-box;
+}
+
+.cat #Head {
+  transform-origin: bottom center;
+  transform: translateY(0) rotate(2deg);
+  animation: head-animation 0.78s ease infinite alternate-reverse;
+}
+
+.cat #Tile {
+  transform-origin: bottom left;
+  transform: rotate(1deg);
+  animation: tile-animation 2s ease infinite;
+}
+
+.cat #Head #EyeRight,
+.cat #Head #EyeLeft {
+  animation: eye-animation 3s 1s ease-in-out infinite;
+}
+
+.cat #Head #EyebL,
+.cat #Head #EyebR {
+  animation: eyeb 3s 1s ease-in-out infinite;
+}
+
+@keyframes head-animation {
+  0% {
+    transform: translateY(0) rotate(2deg);
+  }
+
+  50% {
+    transform: translateY(8px);
+  }
+
+  100% {
+    transform: rotate(-2deg) translateY(0);
+  }
+}
+
+@keyframes eye-animation {
+  0%,
+  2%,
+  100% {
+    transform: matrix(1, 0, 0, 1, 0, 0);
+  }
+
+  1.25% {
+    transform: matrix(0.2, 0, 0, 0.2, -100, -100);
+  }
+}
+
+@keyframes tile-animation {
+  0%,
+  100% {
+    transform: rotate(1deg);
+  }
+
+  50% {
+    transform: rotate(-5deg) translateX(50px) translateY(-75px);
+  }
+}
+
+@keyframes eyeb {
+  0%,
+  2%,
+  100% {
+    transform: translateY(0);
+  }
+
+  1.25% {
+    transform: translateY(100%);
+  }
+}
