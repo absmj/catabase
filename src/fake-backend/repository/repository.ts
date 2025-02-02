@@ -1,14 +1,19 @@
 export class Repository {
-  static async load(repository: string | object) {
+  static load(repository: string | object) {
     if (typeof repository === "string") {
-      const Repo = await import(`../repository/${repository}`);
-      return new Repo(JSON.parse(localStorage.getItem(repository) || ""));
+      const storedData = localStorage.getItem(repository);
+      if (!storedData) {
+        throw new Error(`No data found in localStorage for ${repository}`);
+      }
+
+      return JSON.parse(storedData);
     } else {
       return repository;
     }
   }
 
   save(repository: string, data: object) {
+    console.log(data);
     localStorage.setItem(repository, JSON.stringify(data));
   }
 }

@@ -6,5 +6,6 @@ export interface UserRepository {
   surname: string;
   password: string;
   id: number;
+  selected: number;
   cats: CatRepository[];
 }

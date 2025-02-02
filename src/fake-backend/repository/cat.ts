@@ -1,9 +1,11 @@
 export interface CatRepository {
+  cat_id: number;
   name: string;
   position: Position;
   options: Options | null;
   width: string;
   height: string;
+  [key: string]: any;
 }
 
 export interface Position {
@@ -17,4 +19,6 @@ export interface Options {
   eyeBorrowColor: string;
   bodyColor1: string;
   bodyColor2: string;
+  patternColor: string;
+  strokeColor: string;
 }

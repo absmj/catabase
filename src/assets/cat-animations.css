@@ -6,22 +6,26 @@ svg * {
   transform-origin: bottom center;
   transform: translateY(0) rotate(2deg);
   animation: head-animation 0.78s ease infinite alternate-reverse;
+  animation-delay: inherit;
 }
 
 .cat #Tile {
   transform-origin: bottom left;
   transform: rotate(1deg);
   animation: tile-animation 2s ease infinite;
+  animation-delay: inherit;
 }
 
 .cat #Head #EyeRight,
 .cat #Head #EyeLeft {
-  animation: eye-animation 3s 1s ease-in-out infinite;
+  animation: eye-animation 3s ease-in-out infinite;
+  animation-delay: inherit;
 }
 
 .cat #Head #EyebL,
 .cat #Head #EyebR {
-  animation: eyeb 3s 1s ease-in-out infinite;
+  animation: eyeb 3s ease-in-out infinite;
+  animation-delay: inherit;
 }
 
 @keyframes head-animation {

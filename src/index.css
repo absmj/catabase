@@ -1,57 +1,29 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  --primary-color: #6366f1;
+  --text-color: #0f172a;
+  --bg-color: #ffffff;
+  --nav-bg: rgba(255, 255, 255, 0.8);
+  --nav-border: rgba(231, 231, 231, 0.8);
+  --nav-height: 70px;
+  --nav-shadow: 0 5px 20px -5px rgba(99, 102, 241, 0.1);
+  --button-bg: rgba(99, 102, 241, 0.1);
+  --button-hover: rgba(99, 102, 241, 0.15);
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+[data-theme="dark"] {
+  --primary-color: #818cf8;
+  --text-color: #f1f5f9;
+  --bg-color: #0f172a;
+  --nav-bg: rgba(15, 23, 42, 0.8);
+  --nav-border: rgba(51, 65, 85, 0.8);
+  --nav-shadow: 0 5px 20px -5px rgba(129, 140, 248, 0.15);
+  --button-bg: rgba(129, 140, 248, 0.1);
+  --button-hover: rgba(129, 140, 248, 0.15);
 }
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  font-family: "Inter", sans-serif;
 }
 
 @media (prefers-color-scheme: light) {
