@@ -1,5 +1,4 @@
 import { CatRepository, Options, Position } from "../repository/cat";
-import tinycolor from "tinycolor2";
 
 export default class Cat implements CatRepository {
   cat_id: number;

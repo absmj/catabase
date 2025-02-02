@@ -1,4 +1,4 @@
-import { HTMLAttributes, useEffect, useMemo, useRef, useState } from "react";
+import { HTMLAttributes, useMemo, useRef, useState } from "react";
 import { CatRepository, Position } from "../fake-backend/repository/cat";
 import tinycolor from "tinycolor2";
 

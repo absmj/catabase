@@ -1,7 +1,6 @@
-import { CatRepository, Options, Position } from "../repository/cat";
+import { CatRepository, Options } from "../repository/cat";
 import { Repository } from "../repository/repository";
 import { UserRepository } from "../repository/user";
-import { delete_cookie, set_cookie } from "../utils";
 
 import Cat from "./cat";
 
