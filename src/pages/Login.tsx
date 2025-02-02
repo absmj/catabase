@@ -66,15 +66,15 @@ export function Login() {
       <Navigation />
       <div id="login-panel">
         <Cat
-          style={{ transform: "translateY(-200px) translateX(32px)" }}
+          style={{ transform: "translateY(-200px) translateX(20px)" }}
           position={{
-            y: "calc((100% - 500px) / 2)",
-            x: "calc((100% - 500px) / 2",
+            y: "calc((100% - 300px) / 2)",
+            x: "calc((100% - 300px) / 2",
           }}
           cat_id={Date.now()}
           name="login-cat"
-          width="500px"
-          height="500px"
+          width="300px"
+          height="300px"
           options={null}
           isSelected={false}
         />

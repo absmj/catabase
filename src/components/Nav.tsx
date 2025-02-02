@@ -34,7 +34,7 @@ const Navigation = memo((props: NavigationProps) => {
     <nav className="app-nav">
       <div className="nav-container">
         <a href="#" className="nav-logo">
-          <h1 className="logo-text">catabase</h1>
+          <h1 className="title">catabase</h1>
           <div className="logo-shine"></div>
         </a>
 
