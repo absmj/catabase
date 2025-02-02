@@ -7,6 +7,7 @@
   overflow: hidden;
   position: relative;
   z-index: 2;
+  margin-top: var(--nav-height);
 }
 
 #login-panel .cat {

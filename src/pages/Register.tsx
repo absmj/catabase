@@ -83,38 +83,19 @@ export function Register() {
       <Navigation />
       <div id="login-panel">
         <Cat
-          style={{
-            transform: "translateY(75px) translateX(-300px) rotate(-90deg)",
-          }}
+          style={{ transform: "translateY(-200px) translateX(20px)" }}
           position={{
-            y: "calc((100% - 650px) / 2)",
-            x: "calc((100% - 500px) / 2",
+            y: "calc((100% - 400px) / 2)",
+            x: "calc((100% - 300px) / 2",
           }}
           cat_id={Date.now()}
           name="login-cat"
-          width="500px"
-          height="500px"
-          index={2}
+          width="300px"
+          height="300px"
           options={null}
           isSelected={false}
         />
 
-        <Cat
-          style={{
-            transform: "translateY(75px) translateX(300px) rotate(90deg)",
-          }}
-          position={{
-            y: "calc((100% - 650px) / 2)",
-            x: "calc((100% - 500px) / 2",
-          }}
-          cat_id={Date.now()}
-          name="login-cat"
-          width="500px"
-          height="500px"
-          index={3}
-          options={null}
-          isSelected={false}
-        />
         <div className="form-wrapper">
           <h1 className="title">Welcome, cat-lover </h1>
 
